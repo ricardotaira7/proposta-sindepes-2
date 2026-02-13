@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Proposta 2 – Suporte Técnico</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --azul-escuro:#0b2c4d;
+  --azul:#0d4fa3;
+  --azul-claro:#eaf2fb;
+  --branco:#fff;
+  --cinza:#4a4a4a;
+  --verde:#0f7a36;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif;}
+
+body{
+  background:var(--azul-claro);
+  color:var(--cinza);
+  line-height:1.7;
+}
+
+header{
+  background:linear-gradient(135deg,var(--azul-escuro),var(--azul));
+  color:var(--branco);
+  padding:90px 20px;
+  text-align:center;
+}
+
+header h1{
+  font-size:2.6rem;
+  margin-bottom:18px;
+}
+
+header p{
+  max-width:900px;
+  margin:auto;
+  font-size:1.15rem;
+  opacity:.95;
+}
+
+section{
+  max-width:1150px;
+  margin:80px auto;
+  padding:0 20px;
+}
+
+.card{
+  background:var(--branco);
+  border-radius:20px;
+  padding:55px;
+  margin-bottom:50px;
+  box-shadow:0 25px 55px rgba(0,0,0,.08);
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 35px 70px rgba(0,0,0,.12);
+}
+
+h2{
+  color:var(--azul);
+  font-size:1.95rem;
+  position:relative;
+  display:inline-block;
+  margin-bottom:20px;
+}
+
+h2::after{
+  content:"";
+  display:block;
+  height:4px;
+  width:0;
+  background:linear-gradient(90deg,var(--azul),#4fa3ff);
+  margin-top:10px;
+  border-radius:3px;
+  transition:width 1s ease;
+}
+
+.show h2::after{width:100%;}
+
+ul{margin-top:20px;padding-left:22px;}
+li{margin-bottom:12px;}
+
+.highlight{
+  background:linear-gradient(135deg,#f5f9ff,#e2edff);
+  padding:20px;
+  border-radius:15px;
+  margin-top:20px;
+  transition:.4s;
+}
+
+.highlight:hover{
+  transform:scale(1.02);
+  box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+.economia{
+  background:#e9f7ef;
+  padding:25px;
+  border-radius:15px;
+  margin-top:25px;
+}
+
+.economia strong{
+  color:var(--verde);
+  font-size:1.2rem;
+}
+
+.animate{
+  opacity:0;
+  transform:translateY(40px);
+  transition:.9s ease;
+}
+
+.animate.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+footer{
+  background:var(--azul-escuro);
+  color:#fff;
+  text-align:center;
+  padding:45px 20px;
+  margin-top:80px;
+}
+
+@media(max-width:768px){
+  header h1{font-size:1.8rem;}
+  .card{padding:30px;}
+}
+</style>
+</head>
+
+<body>
+
+<header class="animate">
+  <h1>Proposta 2 – Prestação de Serviços Técnicos</h1>
+  <p>Suporte em Informática, Infraestrutura Elétrica e Manutenção Técnica do Auditório</p>
+</header>
+
+<section>
+
+<div class="card animate">
+  <h2>Modelo de Contratação</h2>
+  <ul>
+    <li>Contrato com duração de 12 meses</li>
+    <li>Pagamento mensal fixo + serviços sob demanda</li>
+    <li>Emissão de nota fiscal</li>
+    <li>Prestação formal de serviços</li>
+  </ul>
+  <div class="highlight">
+    Modelo híbrido: previsibilidade financeira com flexibilidade para demandas adicionais.
+  </div>
+</div>
+
+<div class="card animate">
+  <h2>Plano Mensal Fixo</h2>
+  <div class="highlight">
+    <strong>Valor mensal: R$ 1.200,00</strong><br>
+    Atendimento realizado em horário comercial e sob demanda quando necessário.
+  </div>
+  <ul>
+    <li>Suporte em informática (até 24h)</li>
+    <li>Suporte elétrico interno (até 24h)</li>
+    <li>Manutenção preventiva do auditório</li>
+    <li>Reparo de cabos, soldas, ajustes de conexões e organização técnica</li>
+    <li>Diagnóstico e correção de falhas técnicas internas</li>
+    <li>Organização e prevenção de perda de dados em nuvem</li>
+    <li>Estruturação de backup estratégico</li>
+    <li>Formatação e reinstalação de sistemas operacionais</li>
+    <li>Limpeza preventiva interna de computadores e notebooks</li>
+    <li>Otimização e prevenção de falhas por sobrecarga ou vírus</li>
+  </ul>
+</div>
+
+<div class="card animate">
+  <h2>Serviços Sob Demanda</h2>
+  <ul>
+    <li>Troca de equipamentos ou peças danificadas que não possam ser recuperadas</li>
+    <li>Substituição de componentes elétricos ou de informática</li>
+    <li>Aquisição e instalação de novos dispositivos</li>
+  </ul>
+  <div class="highlight">
+    O plano mensal contempla exclusivamente mão de obra técnica, manutenção corretiva e preventiva, ajustes e consertos.  
+    Peças, equipamentos novos ou substituições estruturais serão orçadas separadamente.
+  </div>
+</div>
+
+<div class="card animate">
+  <h2>Diferenciais Estratégicos</h2>
+  <ul>
+    <li>Atendimento ágil e centralizado</li>
+    <li>Rapidez na execução das demandas</li>
+    <li>Conhecimento aprofundado do funcionamento interno da estrutura</li>
+    <li>Prevenção estratégica de falhas e perda de dados</li>
+  </ul>
+  <div class="highlight">
+    Continuidade operacional com profissional que já conhece toda a infraestrutura, reduzindo falhas, retrabalho e tempo de diagnóstico.
+  </div>
+</div>
+
+<div class="card animate">
+  <h2>Economia e Benefícios Operacionais</h2>
+  <ul>
+    <li>Redução da necessidade de múltiplos fornecedores técnicos</li>
+    <li>Menor tempo de parada por falhas operacionais</li>
+    <li>Prevenção de perda de dados e custos emergenciais</li>
+    <li>Manutenção preventiva evitando substituições prematuras</li>
+    <li>Previsibilidade orçamentária com valor fixo mensal</li>
+  </ul>
+  <div class="economia">
+    <strong>Centralização técnica = mais estabilidade, segurança da informação e controle financeiro.</strong>
+  </div>
+</div>
+
+</section>
+
+<footer>
+  Proposta apresentada por Ricardo Taira
+</footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('show');
+    }
+  });
+},{threshold:.2});
+
+document.querySelectorAll('.animate').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
